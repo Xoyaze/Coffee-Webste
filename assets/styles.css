@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+
+
+body{
+    margin: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+.body-background-container{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+
+    height: 100%;
+    width: 100%;
+    background: url("coffeeBackground.jpg");
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.navLogoSection{
+    display: flex;
+    width: 60%;
+}
+
+.navLogoSection h1{
+    user-select: none;
+    margin-top: 0%;
+    margin-left: -6%;
+    padding-left: 10%;
+    color: black;
+    font-weight: 200;
+    font-family: 'Fasthand', cursive;
+    font-size: 3em;
+}
+
+nav img{
+    height: 150px;
+    width: 150px;
+}
+
+nav ul{
+    box-shadow: 2px 2px 5px;
+    position: fixed;
+    top: -1%;
+    right: 1%;
+    z-index: 99;
+
+    height: 28px;
+    background: url("coffeeBackground.jpg");
+    width: 40%;
+    display: flex;
+    justify-content: space-around;    
+
+    animation: navigationLoader 1s ease;
+}
+
+
+@keyframes navigationLoader{
+    from{
+        top: -5%;
+    }
+    to{
+        top: -1%;
+    }
+}
+
+
+nav ul li{
+    list-style: none;
+    margin-top: 1%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+}
+
+nav ul li a:hover{
+    color: purple;
+    font-weight: 400;
+}
+
+#greetingSection{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 5%;
+    height: 40vh;
+    width: 96vw;
+    margin-left: 2vw;
+    padding-top: 1%;
+    padding-bottom: 5%;
+}
+
+#greetingSection img{
+    margin-top: -10%;
+    height: 60vh;
+    width: 30vw;
+    transition: 500ms all ease;
+}
+
+
+.mainText{
+    color: black;
+    margin-left: 2%;
+    height: 38vh;
+    width: 60%;
+    font-size: 2em;
+}
+
+#coffeeText{
+    color: #895749;
+    font-size: 1.5em;
+    padding-left: 1%;
+}
+
+.productCards{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+    height: 140vh;
+    width: 100%;
+    background: url("coffeeBackground2.jpg");
+    box-shadow: 3px 3px 30px brown;
+    background-size: cover;
+    background-color: red;
+}
+
+.firstCardSection{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.secondCardSection{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards{
+
+    display: flex;
+    flex-direction: column;
+
+    height: 60vh;
+    width: 40vw;
+    overflow: hidden;
+    background-color: #57455D;
+    box-shadow: 2px 2px 20px black;
+    color: #C4FCF1;
+    -webkit-text-stroke: black;
+
+    transition: 500ms all ease;
+}
+
+.learnMore{
+    cursor: pointer;
+    padding: 8% 0%;
+    text-shadow: white;
+    text-align: center;
+    height: 5vh;
+    width: 8vw;
+    padding-bottom: 1%;
+    background-color: #2F4858;
+    box-shadow: 2px 2px 10px black;
+}
+
+.takeAPeek{
+    cursor: pointer;
+    padding: 8% 0%;
+    text-shadow: white;
+    text-align: center;
+    height: 5vh;
+    width: 8vw;
+    padding-bottom: 1%;
+    background-color: #2F4858;
+    box-shadow: 2px 2px 10px black;
+}
+
+.learnMore:hover{
+    background-color: #57455D;
+    color: lightgray;
+}
+
+.takeAPeek:hover{
+    background-color: #57455D;
+    color: lightgray;
+}
+
+.cardSectionDivider{
+    display: flex;
+}
+
+.cardText{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.cards img{
+    height: 60vh;
+    width: 100%;
+    transition: 500ms all ease;
+}
+
+.cards:hover{
+    height: 60vh;
+}
+
+#cardBottomSection{
+    box-shadow: 2px 2px 10px black;
+    padding: 1%;
+    color: black;
+    background-color: white;
+    
+}
+.cards:hover img{
+    height: 50vh;
+    width: 30vw;
+}
+
+#testimonials{
+    margin-top: 8%;
+    margin-right: 0%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    box-shadow: 3px 3px 20px brown;
+    background: url("coffeeBackground.jpg");
+}
+
+#testimonials h1{
+    font-size: 3em;
+}
+
+.reviewCards{
+    height: 60vh;
+    width: 90%;
+    margin-left: 5%;
+    padding: 1%;
+
+    font-weight: 600;
+
+    display: flex;
+}
+
+#potraitImage{
+    height: 22vh;
+    width: 12vw;
+    margin-bottom: 7%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+#reviewer{
+    font-size: 2em;
+    color: brown;
+}
+
+.reviewerCards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1%;
+    height: 55vh;
+    width: 32vw;
+    margin: 0% 1%;
+    box-shadow: 2px 2px 10px black;
+}
+
+.reviewerCards:hover{
+    box-shadow: 2px 2px 10px gray;
+
+}
+
+.contactUsText{
+    font-size: 1.4em;
+    margin-bottom: 5%;
+}
+
+#contactUs{
+    position: relative;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 90vw;
+    margin-left: 5vw;
+}
+
+.contactUsBackground{
+    height: 100%;
+    width: 50%;
+    background-color: rgba(111,75,67,.5);
+    position: absolute;
+    left: 0%;
+    z-index: -1;
+}
+.contactUsBackgroundTwo{
+    height: 100%;
+    width: 50%;
+    background-color: rgba(160,108,80,.5);
+    position: absolute;
+    right: 0%;
+    z-index: -1;
+}
+
+.leftSideMaterials{
+    margin-left: 15%
+}
+
+.inputArea{
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.inputArea input{
+    height: 5%;
+    width: 100%;
+}
+
+input, textarea{
+    margin-top: 2%;
+    margin-bottom: 4%;
+    background: transparent;
+    border: 2px solid black;
+    padding: 1%;
+}
+
+label{
+    position: absolute;
+    left: 5%;
+    top: 28%;
+    transition: .5s all ease;
+    cursor: text;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -24%;
+    color: white;
+}
+
+textarea:focus~label,
+textarea:valid~label{
+    top: -8%;
+    color: white;
+}
+
+.contactLinks{
+    height: 90%;
+    width: 30vw;
+}
+
+.contactLinks h2{
+    margin-top: 20%;
+    user-select: none;
+}
+
+.icons{
+    transition: .2s all ease;
+}
+
+.icons:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.sign-in-container{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 25px;
+    height: 65%;
+    width: 35%;
+
+    position: absolute;
+    top: 15%;
+    left: 32.5%;
+
+    background-color: azure;
+
+    border: 2px solid black;
+    color: black;
+}
+
+
+.signIn-cross{
+    height: 5%;
+    width: 10%;
+
+    position: absolute;
+    top: 4%;
+    right: -3%;
+
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.signIn-header{
+    font-size: 1.2em;
+    padding-top: 2%;
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+
+.signIn-header, .signIn-footer{
+    height: 10%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in-container form{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.form-row{
+    height: 30%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+
+.sign-in-container form h3{
+    display: inline-block;
+    height: 20%;
+    width: 50%;
+
+    font-size: 1.3em;
+}
+
+.sign-in-container form input{
+    height: 80%;
+    width: 100%;
+    background-color: beige;
+    padding: 2%;
+    border-radius: 5px;
+    font-size: 1.2em;
+
+}
+
+.sign-in-container form button{
+    height: 45%;
+    width: 30%;
+    font-size: 1.1em;
+    align-self: center;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+
+    border-radius: 10px;
+}
+
+.signIn-resultMessage{
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 80%;
+    /* background-color: gray; */
+    text-align: center;
+    color: red;
+}
+
+
+.sign-up-container{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 25px;
+    
+    height: 86%;
+    width: 35%;
+
+    position: absolute;
+    top: 7%;
+    left: 32.5%;
+
+    background-color: azure;
+
+    border: 2px solid black;
+    color: black;
+}
+
+.signUp-header{
+    font-size: 1.2em;
+}
+
+.sign-up-container form{
+    height: 85%;
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.signup-form-row{
+    width: 80%;
+    height: 18%;
+    
+}
+
+.signup-form-row h3{
+    font-size: 1.3em;
+    display: inline;
+}
+
+.signup-form-row input{
+    height: 50%;
+    width: 100%;
+    background-color: beige;
+    padding: 2%;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.signup-button-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.signup-form-row button{
+    height: 45%;
+    width: 30%;
+
+    background-color: green;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#sign-in-button-one, #sign-up-button-one{
+    color: darkblue;
+    cursor: pointer;
+    text-decoration: underline;
+}

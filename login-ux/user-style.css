@@ -1,0 +1,234 @@
+
+body{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Nunito", sans-serif;
+    font-size: .9em;
+    font-style: italic;
+
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    background: #572571;
+}
+
+.left-body{
+    height: 100%;
+    width: 15%;
+    background-color: #572571;
+    box-shadow: 8px 8px 15px black;
+
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+}
+
+.left-body-upper-section{
+    height: 50%;
+    width: 100%;
+    border-bottom: 2px solid black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-body-lower-section{
+    height: 45%;
+    width: 100%;
+    /* background-color: gray; */
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.left-body-lower-section > .navigation-option-block{
+    border-top: 2px solid black;
+}
+
+.navigation-option-block{
+    height: 15%;
+    width: 100%;
+    /* background-color: red; */
+    border-bottom: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-size: 0.8em;
+    color: black;
+
+    cursor: pointer;
+    transition: all 150ms ease;
+
+    user-select: none;
+}
+
+.navigation-option-block:hover{
+    font-size: 0.85em;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.navigation-option-block:hover > form button{
+    color: white;
+}
+
+
+.right-body-order-page{
+    font-family: "Roboto Mono", monospace;
+
+    height: 240%;
+    width: 85%;
+    background-color: #FFE8FF;
+
+    margin-left: 15%;
+}
+
+.order-upper-half{
+    height: 8%;
+    width: 95%;
+
+    margin-left: 3%;
+    /* padding-left: 2%; */
+    font-size: 1.5em;
+}
+
+.order-lower-half{
+    font-size: 1.1em;
+    height: 85%;
+    width: 97%;
+    padding-left: 3%;
+}
+
+.order-lower-half form{
+    font-size: 1.2em;
+    height: auto;
+    width: 95%;
+    background-color: beige;
+}
+
+.order-lower-half form select{
+    padding: 1% 3%;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+
+
+#deliveryAddress, #contactNumber{
+    padding: 1%;
+}
+
+#order_submit{
+    padding: 1% 3%;
+    background-color: purple;
+    color: white;
+    border-radius: 15px;
+}
+
+#update_submit, #delete_submit{
+    padding: 3% 3%;
+    background-color: purple;
+    color: white;
+    border-radius: 15px;
+}
+
+label{
+    user-select: none;
+}
+
+.right-body-viewOrder-page{
+    height: 220%;
+    width: 30%;
+
+    overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-body-viewOrder-page::-webkit-scrollbar {
+    direction: rtl;
+}
+
+.right-body-viewOrder-page::-webkit-scrollbar-track{
+    background-color: white;
+}
+
+.right-body-viewOrder-page::-webkit-scrollbar-thumb{
+    background: #FFE8FF;
+}
+
+.right-body-updateOrder-page{
+    height: 220%;
+    width: 30%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    padding: 1%;
+}
+
+.right-body-updateOrder-page form{
+    font-size: 1.2em;
+}
+
+.right-body-updateOrder-page form input{
+    padding: 3%;
+}
+
+
+.right-body-deleteOrder-page{
+    height: 220%;
+    width: 30%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    padding: 1%;
+}
+
+.right-body-deleteOrder-page form label{
+    font-size: 1.3em;
+}
+
+.right-body-deleteOrder-page form input{
+    padding: 2%;
+}
+
+.navigation-option-block form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-option-block form button {
+    margin-top: 15%;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    padding: 0; 
+    outline: none; 
+    transition: 200ms all ease;
+}
+
+.right-body-deleteOrder-page.hidden, .right-body-updateOrder-page.hidden, .right-body-viewOrder-page.hidden{
+    display: none;
+}
